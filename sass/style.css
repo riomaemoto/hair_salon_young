@@ -114,6 +114,13 @@ header .headerBox .sns_container img {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+@media (max-width: 940px) {
+  .hero .center_logo {
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -25%);
+  }
+}
 
 @media (max-width: 940px) {
   body {
