@@ -1,5 +1,5 @@
 $(function () {
   $(".hamburger").on("click", function () {
-    $(".closeList").toggleClass("openList")
+    $(".listContent").slideToggle(500)
   })
 })

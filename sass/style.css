@@ -29,7 +29,6 @@ body {
 }
 
 header {
-  background-color: black;
   position: fixed;
   width: 100%;
 }
@@ -79,19 +78,24 @@ header .headerBox .sns_container img {
   background-color: white;
 }
 
-.closeList {
-  height: 0;
-  transition: ease-in 0.3s;
-}
-.closeList .listContent {
+.listContent {
+  display: none;
   padding: 20px;
   padding-top: 0;
-  line-height: 20px;
+  line-height: 30px;
+  font-size: 20px;
 }
 
-.openList {
-  height: 200px;
-  transition: ease-in 0.3s;
+.hero img {
+  width: 100%;
+  height: 100vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media (max-width: 940px) {
+  .hero img {
+    height: 50vh;
+  }
 }
 
 @media (max-width: 940px) {
