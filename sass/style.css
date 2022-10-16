@@ -77,6 +77,17 @@ header .headerBox .sns_container img {
   margin: 5px;
   background-color: white;
 }
+.hamburger .line1.open {
+  transform: rotate(-45deg) translate(-0.1rem, 0.3rem);
+  transition: 0.5s;
+}
+.hamburger .line2.open {
+  display: none;
+}
+.hamburger .line3.open {
+  transform: rotate(45deg) translate(-0.3rem, -0.5rem);
+  transition: 0.5s;
+}
 
 .listContent {
   display: none;
@@ -86,16 +97,22 @@ header .headerBox .sns_container img {
   font-size: 20px;
 }
 
-.hero img {
+.hero .bgimg {
   width: 100%;
   height: 100vh;
   -o-object-fit: cover;
      object-fit: cover;
 }
 @media (max-width: 940px) {
-  .hero img {
+  .hero .bgimg {
     height: 50vh;
   }
+}
+.hero .center_logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 @media (max-width: 940px) {
