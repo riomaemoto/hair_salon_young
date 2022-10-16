@@ -29,13 +29,16 @@ li {
   max-width: 1200px;
   margin: 0px auto;
 }
+
 $mainColor: black;
 $whiteColor: white;
+
 body {
   height: 2500px;
   color: $whiteColor;
   font-size: 18px;
 }
+
 header {
   background-color: $mainColor;
   position: fixed;
@@ -44,12 +47,14 @@ header {
   .headerBox {
     display: flex;
     align-items: center;
+
     @include mixin_width();
     padding: 20px 20px;
 
     img {
       width: 156px;
     }
+
     .nav_list {
       display: flex;
       font-size: 18px;
@@ -58,31 +63,50 @@ header {
         padding: 0px 0 0 20px;
       }
     }
-  }
 
-  .hamburger {
-    display: none;
-    div {
-      width: 30px;
-      height: 3px;
-      margin: 5px;
-      background-color: $whiteColor;
+    .sns_container {
+      display: flex;
+      padding-left: 20px;
+
+      @media (max-width: 1058px) {
+        display: none;
+      }
+
+      li {
+        padding-left: 10px;
+        text-align: center;
+      }
+
+      img {
+        display: block;
+        width: 30px;
+      }
     }
   }
+}
 
-  .closeList {
-    height: 0;
-    transition: ease-in 0.3s;
-    .listContent {
-      padding: 20px;
-      padding-top: 0;
-      line-height: 20px;
-    }
+.hamburger {
+  display: none;
+  div {
+    width: 30px;
+    height: 3px;
+    margin: 5px;
+    background-color: $whiteColor;
   }
-  .openList {
-    height: 200px;
-    transition: ease-in 0.3s;
+}
+
+.closeList {
+  height: 0;
+  transition: ease-in 0.3s;
+  .listContent {
+    padding: 20px;
+    padding-top: 0;
+    line-height: 20px;
   }
+}
+.openList {
+  height: 200px;
+  transition: ease-in 0.3s;
 }
 
 @media (max-width: 940px) {

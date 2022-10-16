@@ -51,25 +51,45 @@ header .headerBox .nav_list li {
   color: white;
   padding: 0px 0 0 20px;
 }
-header .hamburger {
+header .headerBox .sns_container {
+  display: flex;
+  padding-left: 20px;
+}
+@media (max-width: 1058px) {
+  header .headerBox .sns_container {
+    display: none;
+  }
+}
+header .headerBox .sns_container li {
+  padding-left: 10px;
+  text-align: center;
+}
+header .headerBox .sns_container img {
+  display: block;
+  width: 30px;
+}
+
+.hamburger {
   display: none;
 }
-header .hamburger div {
+.hamburger div {
   width: 30px;
   height: 3px;
   margin: 5px;
   background-color: white;
 }
-header .closeList {
+
+.closeList {
   height: 0;
   transition: ease-in 0.3s;
 }
-header .closeList .listContent {
+.closeList .listContent {
   padding: 20px;
   padding-top: 0;
   line-height: 20px;
 }
-header .openList {
+
+.openList {
   height: 200px;
   transition: ease-in 0.3s;
 }
