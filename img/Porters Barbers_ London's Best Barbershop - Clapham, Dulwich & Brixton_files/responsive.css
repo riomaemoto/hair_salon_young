@@ -1,0 +1,390 @@
+@media (min-width: 1400px) {
+.logo-content {
+top: 30% !important;
+}
+}
+@media (min-width: 769px) {
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+float: left;
+}
+}
+@media (max-width: 1200px) {
+ul.social-header {
+display: none;
+}
+nav li > a {
+font-size: 15px;
+color: #fff;
+}
+.logo-top {
+width: 167px;
+margin-top: 22px;
+}
+nav.navbar.tpadding {
+padding-left: 20px;
+}
+.socials-icons img {
+width: 22px;
+height: 22px;
+margin-top: 7px;
+}
+.wpp-list li {
+width: 32% !important;
+}
+
+
+}
+@media (max-width: 992px) {
+.navbar-right {
+margin-right: 0px !important;
+}
+nav.navbar-collapse.collapse {
+margin-right: 0px !important;
+}
+ul#menu-main-menu li a {
+font-size: 15px;
+}
+#location .col-md-6.col-sm-12.col-xs-12 {
+margin-bottom: 96px;
+text-align: center;
+}
+#location .contact-info p {
+text-align: center !important;
+}
+#location img {
+display: block;
+margin-left: auto;
+margin-right: auto;
+}
+.groomig-info {
+z-index: 1
+}
+figure.effect-ming {
+z-index: 10;
+}
+nav li > a {
+font-size: 15px;
+color: #fff;
+padding-left: 11px !important;
+padding-right: 11px !important;
+}
+.logo-top {
+width: 167px;
+margin-top: 22px;
+}
+nav.navbar.tpadding {
+padding-left: 46px;
+float: left;
+width: 100%;
+}
+.socials-icons img {
+display: none;
+}
+figure.effect-bubba h3 {
+margin: 80px auto 0;
+font-size: 20px;
+width: 160px;
+}
+#pattern p {
+width: 85%;
+}
+img.blockquote {
+margin-left: 0px !important;
+}
+ul.social-header {
+display: none;
+}
+.nav>li>a {
+font-size: 14px;
+font-weight: 400;
+}
+#illustration h3 {
+font-size: 26px;
+}
+.wpp-list li {
+width: 32% !important;
+}
+
+.home img.big-logo {
+width: 115px !important;
+height: 106px !important;
+margin-top: 50px !important;
+}
+
+.scrolldown img {
+    width: 38px;
+    margin-top: 24px !important;
+}
+
+
+#footer img.footer-logo {
+display: block;
+margin: 0 auto;
+margin-bottom: 48px;
+}
+#submit-form {
+display: block;
+margin-top: 12px;
+}
+h4.signup {
+margin-top: 48px;
+}
+.social-links {
+text-align: center;
+margin-top: 48px !important;
+}
+.newsletter-form {
+text-align: center;
+margin-top: 48px;
+}
+.address-details
+.shrink-nav .logo-black, .shrink-nav .logo-green {
+margin-left: 14px;
+}
+
+.address-details, .footer-links {
+text-align: center;
+}
+ul.address {
+margin-bottom: 24px;
+}
+.clapham-shop {
+text-align: center;
+}
+.send-mesg {
+  margin-top: 24px !important;
+} 
+
+textarea::-webkit-input-placeholder {
+  font-size: 9px !important;
+  color: red;
+}
+
+}
+@media (max-width: 769px) {
+.send-mesg {
+  margin-top: 24px !important;
+} 
+  .send-mesg .col-md-12 {
+    padding: 0;
+}
+
+ul.products li.product, .woocommerce-page ul.products li.product {
+width: 100% !important;
+margin: 0 1.8% 2.992em 0;
+}
+ul.products li.product, .woocommerce-page ul.products li.product {
+width: 100% !important;
+}
+.shrink-nav .navbar-nav>li>a {
+padding-top: 10px !important;
+}
+section#contact .col-md-6 {
+margin-bottom: 48px;
+}
+section#contact .col-md-6:last-child {
+margin-bottom: 0px;
+}
+.send-mesg .col-md-12 {
+padding-left: 0;
+}
+section#gift-voucher .col-md-4 {
+margin-bottom: 48px;
+}
+section#gift-voucher .col-md-4:last-child {
+margin-bottom: 0px;
+}
+.main-text {
+top: 100px;
+}
+.main-text img {
+width: 50%;
+height: auto;
+}
+img.slider {
+min-height: 500px !important;
+width: 100%;
+}
+.shrink-nav .navbar-nav>li>a {
+padding-top: 12px;
+}
+.navbar-inverse-black .navbar-nav>li>a {
+
+padding-top: 20px;
+}
+#footer img.footer-logo {
+display: block;
+margin: 0 auto;
+margin-bottom: 48px;
+}
+#submit-form {
+display: block;
+margin-top: 12px;
+}
+h4.signup {
+margin-top: 48px;
+}
+.social-links {
+text-align: center;
+margin-top: 48px !important;
+}
+.newsletter-form {
+text-align: center;
+margin-top: 48px;
+}
+.address-details
+.shrink-nav .logo-black, .shrink-nav .logo-green {
+margin-left: 14px;
+}
+.navbar-default .navbar-toggle {
+margin-top: 15px;
+}
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+margin-top: 14px;
+}
+.navbar-toggle {
+background: #000 !important;
+}
+.icon-bar {
+background: #fff !important;
+}
+.navbar-header {
+margin-top: -48px;
+}
+#pattern p {
+font-size: 16px;
+width: 85%;
+display: block;
+margin: 0 auto;
+}
+img.blockquote {
+margin-left: 0px !important;
+}
+span.name {
+font-size: 18px;
+}
+.address-details, .footer-links {
+text-align: center;
+}
+ul.address {
+margin-bottom: 24px;
+}
+.clapham-shop {
+text-align: center;
+}
+.wpp-list li {
+width: 29% !important;
+}
+
+img.big-logo {
+width: 115px !important;
+height: 106px !important;
+margin-top: 24px !important;
+}
+
+
+}
+@media (max-width: 655px) {
+.wpp-list li {
+width: 100% !important;
+}
+}
+@media (max-width: 480px) {
+
+/*.logo-content {
+    top: 12% !important;
+}*/
+
+a.btn-location {
+ font-size: 14px !important;
+}
+
+h1 {
+font-size: 30px !important;
+line-height: 38px;
+font-family: 'Bebas Neue', sans-serif;
+}
+h2 {
+font-size: 26px !important;
+line-height: 34px !important;
+   font-family: 'Bebas Neue', sans-serif;
+}
+h3 {
+font-size: 22px !important;
+line-height: 30px;
+   font-family: 'Bebas Neue', sans-serif;
+}
+h4 {
+font-size: 20px !important;
+line-height: 30px;
+   font-family: 'Bebas Neue', sans-serif;
+}
+h5 {
+font-size: 18px !important;
+line-height: 26px;
+   font-family: 'Bebas Neue', sans-serif;
+}
+h6 {
+font-size: 16px !important;
+line-height: 22px;
+   font-family: 'Bebas Neue', sans-serif;
+}
+p {
+font-size: 14px !important;
+}
+figure.effect-bubba h2 {
+top: 35%;
+width: 150px !important;
+}
+
+.scrolldown img {
+    width: 38px;
+    margin-top: 24px !important;
+}
+
+
+
+.home img.big-logo {
+width: 115px !important;
+height: 106px !important;
+margin-top: 50px !important;
+}
+.main-text img {
+margin-top: -36% !important;
+}
+img.slider {
+min-height: 300px !important;
+width: 100%;
+}
+figure.effect-ming:hover figcaption {
+display: none;
+}
+figure.effect-bubba h2 {
+width: 150px;
+/*		margin-top: 25% !important;*/
+font-size: 24px;
+}
+.text-info {
+position: relative;
+width: 100%;
+height: 300px;
+}
+.inner-img {
+float: none;
+}
+.text-table {
+display: inline-block;
+}
+.text-table-cell {
+display: inline-block;
+padding-top: 0px !important;
+}
+.service-box {
+background: #000;
+min-height: 200px;
+}
+
+.text-table-cell p {
+    line-height: 24px;
+}
+}

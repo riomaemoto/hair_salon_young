@@ -21,10 +21,9 @@ li {
   list-style: none;
 }
 
-/*------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------start---------------------------------------------------*/
 body {
   height: 2500px;
-  color: white;
   font-size: 18px;
 }
 
@@ -103,6 +102,32 @@ header .headerBox .sns_container img {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.illustration {
+  border: 1px solid #000;
+  width: 100%;
+}
+.illustration .illustrationBox {
+  border: 1px solid #000;
+  max-width: 1200px;
+  margin: 0px auto;
+}
+.illustration .illustrationBox .category {
+  border: 1px solid #000;
+  display: flex;
+  justify-content: center;
+}
+.illustration .illustrationBox .category .category_picture {
+  align-items: center;
+  border: 1px solid #000;
+  padding: 100px 100px;
+}
+.illustration .illustrationBox .category .category_picture img {
+  height: 150px;
+}
+.illustration .illustrationBox .category .category_picture .category_title {
+  text-align: center;
 }
 
 @media (max-width: 1058px) {
