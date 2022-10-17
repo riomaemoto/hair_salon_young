@@ -8,6 +8,11 @@ html {
   font-size: 62.5%;
 }
 
+body {
+  height: 2500px;
+  font-size: 18px;
+}
+
 a {
   color: white;
   text-decoration: none;
@@ -22,9 +27,9 @@ li {
 }
 
 /*----------------------------------------start---------------------------------------------------*/
-body {
-  height: 2500px;
-  font-size: 18px;
+.wrap {
+  max-width: 1200px;
+  margin: 0px auto;
 }
 
 header {
@@ -105,29 +110,45 @@ header .headerBox .sns_container img {
 }
 
 .illustration {
-  border: 1px solid #000;
   width: 100%;
 }
-.illustration .illustrationBox {
-  border: 1px solid #000;
-  max-width: 1200px;
-  margin: 0px auto;
-}
-.illustration .illustrationBox .category {
-  border: 1px solid #000;
+.illustration .category {
   display: flex;
   justify-content: center;
 }
-.illustration .illustrationBox .category .category_picture {
-  align-items: center;
-  border: 1px solid #000;
-  padding: 100px 100px;
+.illustration .category .category_picture {
+  margin: 40px auto;
 }
-.illustration .illustrationBox .category .category_picture img {
+.illustration .category .category_picture .paddingL {
+  padding-left: 15px;
+}
+.illustration .category .category_picture img {
   height: 150px;
 }
-.illustration .illustrationBox .category .category_picture .category_title {
+.illustration .category .category_picture .category_title {
   text-align: center;
+}
+
+.seeThrough {
+  background-image: url(../img/backGroundimg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+}
+.seeThrough .seeThroughBox {
+  position: relative;
+  height: 810px;
+}
+.seeThrough .seeThroughBox .middle_h1_text {
+  color: white;
+  background-color: rgba(200, 181, 181, 0.453);
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  width: 80%;
 }
 
 @media (max-width: 1058px) {
@@ -179,5 +200,8 @@ header .headerBox .sns_container img {
     top: 25%;
     left: 50%;
     transform: translate(-50%, -25%);
+  }
+  .category {
+    flex-direction: column;
   }
 }/*# sourceMappingURL=style.css.map */
