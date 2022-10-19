@@ -216,6 +216,10 @@ header {
   }
   .map {
     text-align: center;
+    iframe {
+      width: 90%;
+      height: 50vh;
+    }
   }
 }
 
@@ -256,12 +260,12 @@ footer {
     }
   }
 }
-
-@media (max-width: 640px) {
-  .category {
-    flex-direction: column;
+@media (max-width: 940px) {
+  iframe {
+    height: 35vh;
   }
 }
+
 @media (max-width: 473px) {
   .menu {
     .menu_container {

@@ -193,6 +193,10 @@ header .headerBox .sns_container img {
 .google_map .map {
   text-align: center;
 }
+.google_map .map iframe {
+  width: 90%;
+  height: 50vh;
+}
 
 footer {
   width: 100%;
@@ -222,9 +226,9 @@ footer {
     justify-content: space-between;
   }
 }
-@media (max-width: 640px) {
-  .category {
-    flex-direction: column;
+@media (max-width: 940px) {
+  iframe {
+    height: 35vh;
   }
 }
 @media (max-width: 473px) {
