@@ -100,8 +100,11 @@ header .headerBox .sns_container img {
 }
 
 .illustration {
-  margin: 50px auto;
   width: 100%;
+  background-image: url(../img/dairiseki.jpg);
+  height: 200vh;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .illustration .category {
   display: flex;
@@ -143,52 +146,33 @@ header .headerBox .sns_container img {
   width: 80%;
 }
 
-.cutStyle {
+.menu {
   width: 100%;
 }
-.cutStyle .cutStyleBox {
-  margin: 50px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 2px;
+.menu .menu_container {
+  margin: 0 auto;
 }
-.cutStyle .cutStyleBox li {
-  position: relative;
+.menu .menu_container h2 {
+  text-align: center;
 }
-.cutStyle .cutStyleBox li img {
-  border: 10px solid black;
+.menu .menu_container .cut {
+  margin: 30px auto;
+  display: flex;
+  justify-content: space-evenly;
+}
+.menu .menu_container .cut .cutTitle {
+  margin: 25px;
+  font-weight: bold;
+  font-size: 16px;
+}
+.menu .menu_container .cut .cutPrice {
+  margin: 25px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+footer {
   width: 100%;
-  height: 100%;
-}
-.cutStyle .cutStyleBox li img:hover {
-  border: 30px solid black;
-  transition: ease 0.2s;
-}
-.cutStyle .cutStyleBox li .title {
-  position: absolute;
-  padding: 2px;
-  top: 55%;
-  left: 50%;
-  font-weight: 700;
-  font-size: 25px;
-  transform: translate(-50%, -50px);
-  color: white;
-  background-color: rgba(55, 53, 53, 0.228);
-  width: 70%;
-  text-align: center;
-}
-.cutStyle .cutStyleBox li .price {
-  position: absolute;
-  padding: 2px;
-  top: 68%;
-  left: 50%;
-  font-weight: 700;
-  font-size: 25px;
-  transform: translate(-50%, -50px);
-  color: white;
-  background-color: rgba(55, 53, 53, 0.228);
-  width: 70%;
-  text-align: center;
 }
 
 @media (max-width: 1158px) {
@@ -219,8 +203,9 @@ header .headerBox .sns_container img {
   .category {
     flex-direction: column;
   }
-  .cutStyleBox {
-    display: flex !important;
-    flex-direction: column !important;
+}
+@media (max-width: 399px) {
+  .cutPrice {
+    margin-bottom: 35px;
   }
 }/*# sourceMappingURL=style.css.map */
