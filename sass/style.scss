@@ -63,6 +63,7 @@ header {
     .nav_list {
       display: flex;
       font-size: 18px;
+      margin-left: 50px;
       li {
         color: white;
         padding: 0px 0 0 20px;
@@ -175,7 +176,7 @@ header {
   .menu_container {
     margin: 0 auto;
     h2 {
-      font-size: 35px;
+      font-size: 30px;
       text-align: center;
     }
     .cut {
@@ -202,6 +203,23 @@ header {
 }
 
 // ----------------------------------- map -----------------------------------------
+.google_map {
+  width: 100%;
+  h2 {
+    font-size: 30px;
+    text-align: center;
+    margin: 40px auto;
+  }
+  .address {
+    text-align: center;
+    margin: 40px auto;
+  }
+  .map {
+    text-align: center;
+  }
+}
+
+// ----------------------------------- hours -----------------------------------------
 
 // ----------------------------------- footer -----------------------------------------
 footer {

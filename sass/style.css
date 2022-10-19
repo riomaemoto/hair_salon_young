@@ -52,6 +52,7 @@ header .headerBox img {
 header .headerBox .nav_list {
   display: flex;
   font-size: 18px;
+  margin-left: 50px;
 }
 header .headerBox .nav_list li {
   color: white;
@@ -153,7 +154,7 @@ header .headerBox .sns_container img {
   margin: 0 auto;
 }
 .menu .menu_container h2 {
-  font-size: 35px;
+  font-size: 30px;
   text-align: center;
 }
 .menu .menu_container .cut {
@@ -175,6 +176,22 @@ header .headerBox .sns_container img {
   margin: 25px;
   font-weight: bold;
   font-size: 20px;
+}
+
+.google_map {
+  width: 100%;
+}
+.google_map h2 {
+  font-size: 30px;
+  text-align: center;
+  margin: 40px auto;
+}
+.google_map .address {
+  text-align: center;
+  margin: 40px auto;
+}
+.google_map .map {
+  text-align: center;
 }
 
 footer {
