@@ -227,8 +227,12 @@ footer {
   }
 }
 @media (max-width: 940px) {
-  iframe {
-    height: 35vh;
+  .category {
+    flex-direction: column;
+  }
+  .google_map .map iframe {
+    width: 90%;
+    height: 30vh;
   }
 }
 @media (max-width: 473px) {
