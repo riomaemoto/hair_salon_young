@@ -102,7 +102,7 @@ header .headerBox .sns_container img {
 .illustration {
   width: 100%;
   background-image: url(../img/dairiseki.jpg);
-  height: 200vh;
+  height: 100%;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -153,6 +153,7 @@ header .headerBox .sns_container img {
   margin: 0 auto;
 }
 .menu .menu_container h2 {
+  font-size: 35px;
   text-align: center;
 }
 .menu .menu_container .cut {
@@ -163,12 +164,17 @@ header .headerBox .sns_container img {
 .menu .menu_container .cut .cutTitle {
   margin: 25px;
   font-weight: bold;
-  font-size: 16px;
+  font-size: 20px;
+}
+.menu .menu_container .cut .cutPrice3 {
+  margin: 25px;
+  font-weight: bold;
+  font-size: 20px;
 }
 .menu .menu_container .cut .cutPrice {
   margin: 25px;
   font-weight: bold;
-  font-size: 16px;
+  font-size: 20px;
 }
 
 footer {
@@ -204,8 +210,17 @@ footer {
     flex-direction: column;
   }
 }
-@media (max-width: 399px) {
-  .cutPrice {
-    margin-bottom: 35px;
+@media (max-width: 473px) {
+  .menu .menu_container h2 {
+    font-size: 20px;
+  }
+  .menu .menu_container .cut .cutTitle {
+    font-size: 13px;
+  }
+  .menu .menu_container .cut .cutPrice3 {
+    font-size: 13px;
+  }
+  .menu .menu_container .cut .cutPrice {
+    font-size: 13px;
   }
 }/*# sourceMappingURL=style.css.map */

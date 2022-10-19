@@ -121,7 +121,7 @@ header {
 .illustration {
   width: 100%;
   background-image: url(../img/dairiseki.jpg);
-  height: 200vh;
+  height: 100%;
   background-size: cover;
   background-repeat: no-repeat;
   .category {
@@ -175,6 +175,7 @@ header {
   .menu_container {
     margin: 0 auto;
     h2 {
+      font-size: 35px;
       text-align: center;
     }
     .cut {
@@ -184,12 +185,17 @@ header {
       .cutTitle {
         margin: 25px;
         font-weight: bold;
-        font-size: 16px;
+        font-size: 20px;
+      }
+      .cutPrice3 {
+        margin: 25px;
+        font-weight: bold;
+        font-size: 20px;
       }
       .cutPrice {
         margin: 25px;
         font-weight: bold;
-        font-size: 16px;
+        font-size: 20px;
       }
     }
   }
@@ -236,8 +242,23 @@ footer {
     flex-direction: column;
   }
 }
-@media (max-width: 399px) {
-  .cutPrice {
-    margin-bottom: 35px;
+@media (max-width: 473px) {
+  .menu {
+    .menu_container {
+      h2 {
+        font-size: 20px;
+      }
+      .cut {
+        .cutTitle {
+          font-size: 13px;
+        }
+        .cutPrice3 {
+          font-size: 13px;
+        }
+        .cutPrice {
+          font-size: 13px;
+        }
+      }
+    }
   }
 }
