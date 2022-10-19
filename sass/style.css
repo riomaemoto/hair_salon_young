@@ -110,6 +110,7 @@ header .headerBox .sns_container img {
 .illustration .category {
   display: flex;
   justify-content: center;
+  padding: 100px 0;
 }
 .illustration .category .category_picture {
   margin: 50px auto;
@@ -149,6 +150,7 @@ header .headerBox .sns_container img {
 
 .menu {
   width: 100%;
+  margin-bottom: 120px;
 }
 .menu .menu_container {
   margin: 0 auto;
@@ -230,12 +232,11 @@ footer {
   .category {
     flex-direction: column;
   }
-  .google_map .map iframe {
-    width: 90%;
-    height: 30vh;
-  }
 }
 @media (max-width: 473px) {
+  .menu {
+    margin-bottom: 30px;
+  }
   .menu .menu_container h2 {
     font-size: 20px;
   }
@@ -247,5 +248,12 @@ footer {
   }
   .menu .menu_container .cut .cutPrice {
     font-size: 13px;
+  }
+  .google_map h2 {
+    font-size: 20px;
+  }
+  .google_map .map iframe {
+    width: 90%;
+    height: 30vh;
   }
 }/*# sourceMappingURL=style.css.map */
