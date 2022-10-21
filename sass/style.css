@@ -9,6 +9,7 @@ html {
 }
 
 body {
+  font-family: "Noto Sans JP";
   width: 100%;
   background-image: url(../img/dairiseki.jpg);
   height: 100%;
@@ -46,6 +47,7 @@ header {
 header .headerBox {
   display: flex;
   align-items: center;
+  justify-content: center;
   max-width: 1200px;
   margin: 0px auto;
   padding: 20px 20px;
@@ -62,15 +64,28 @@ header .headerBox .nav_list li {
   color: white;
   padding: 0px 0 0 20px;
 }
-header .headerBox .sns_container {
+header .headerBox .nav_list li a:hover {
+  color: rgb(255, 255, 0);
+}
+header .headerBox .icons {
   display: flex;
   padding-left: 20px;
 }
-header .headerBox .sns_container li {
-  padding-left: 10px;
+header .headerBox .icons li {
+  margin-left: 30px;
   text-align: center;
 }
-header .headerBox .sns_container img {
+header .headerBox .icons .email {
+  width: 60px;
+  border-radius: 4px;
+  background-color: rgb(240, 0, 116);
+}
+header .headerBox .icons .phone {
+  width: 60px;
+  border-radius: 4px;
+  background-color: rgb(0, 237, 39);
+}
+header .headerBox .icons img {
   display: block;
   width: 30px;
 }
@@ -258,9 +273,14 @@ header .headerBox .sns_container img {
   width: 90%;
 }
 .contact .form .button {
+  cursor: pointer;
   width: 90%;
   margin: 10px auto;
   border-radius: 5px;
+  background-color: rgba(0, 255, 30, 0.403);
+}
+.contact .form .button:hover {
+  border: 0.2px solid #000;
   background-color: rgba(0, 255, 30, 0.811);
 }
 
@@ -280,6 +300,7 @@ header .headerBox .sns_container img {
     background-color: rgba(60, 60, 60, 0.685);
   }
   body header .hamburger {
+    cursor: pointer;
     display: block;
   }
   body header nav {
@@ -288,9 +309,7 @@ header .headerBox .sns_container img {
   body header .headerBox {
     justify-content: space-between;
   }
-  body header .headerBox .sns_container {
-    display: flex;
-    padding-left: 20px;
+  body header .headerBox .icons {
     display: none;
   }
   body footer {
@@ -309,23 +328,22 @@ header .headerBox .sns_container img {
     justify-content: space-around;
     height: 50px;
   }
-  body footer .footerBox .footer_sns li {
+  body footer .footerBox .footer_sns a {
+    width: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
   }
+  body footer .footerBox .footer_sns .emailBox {
+    border: 1px solid #000;
+    background-color: rgb(240, 0, 116);
+  }
+  body footer .footerBox .footer_sns .phoneBox {
+    border: 1px solid #000;
+    background-color: rgb(0, 237, 39);
+  }
   body footer .footerBox .footer_sns li i {
     font-size: 24px;
-  }
-  body footer .footerBox .footer_sns .email {
-    width: 50%;
-    background-color: purple;
-    border: 1px solid #000;
-  }
-  body footer .footerBox .footer_sns .phone {
-    width: 50%;
-    background-color: rgb(41, 131, 227);
-    border: 1px solid #000;
   }
   body footer .footerBox .footer_sns img {
     display: block;
@@ -352,13 +370,13 @@ header .headerBox .sns_container img {
     font-size: 20px;
   }
   .menu .menu_container .cut .cutTitle {
-    font-size: 13px;
+    font-size: 12px;
   }
   .menu .menu_container .cut .cutPrice3 {
-    font-size: 13px;
+    font-size: 12px;
   }
   .menu .menu_container .cut .cutPrice {
-    font-size: 13px;
+    font-size: 12px;
   }
   .google_map h2 {
     font-size: 20px;

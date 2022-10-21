@@ -11,6 +11,7 @@ html {
 }
 
 body {
+  font-family: "Noto Sans JP";
   width: 100%;
   background-image: url(../img/dairiseki.jpg);
   height: 100%;
@@ -56,7 +57,7 @@ header {
   .headerBox {
     display: flex;
     align-items: center;
-
+    justify-content: center;
     @include mixin_width();
     padding: 20px 20px;
 
@@ -71,16 +72,31 @@ header {
       li {
         color: white;
         padding: 0px 0 0 20px;
+        a {
+          &:hover {
+            color: rgb(255, 255, 0);
+          }
+        }
       }
     }
 
-    .sns_container {
+    .icons {
       display: flex;
       padding-left: 20px;
 
       li {
-        padding-left: 10px;
+        margin-left: 30px;
         text-align: center;
+      }
+      .email {
+        width: 60px;
+        border-radius: 4px;
+        background-color: rgb(240, 0, 116);
+      }
+      .phone {
+        width: 60px;
+        border-radius: 4px;
+        background-color: rgb(0, 237, 39);
       }
 
       img {
@@ -284,10 +300,15 @@ header {
       width: 90%;
     }
     .button {
+      cursor: pointer;
       width: 90%;
       margin: 10px auto;
       border-radius: 5px;
-      background-color: rgba(0, 255, 30, 0.811);
+      background-color: rgba(0, 255, 30, 0.403);
+      &:hover {
+        border: 0.2px solid #000;
+        background-color: rgba(0, 255, 30, 0.811);
+      }
     }
   }
 }
@@ -309,6 +330,7 @@ header {
     header {
       background-color: rgba(60, 60, 60, 0.685);
       .hamburger {
+        cursor: pointer;
         display: block;
       }
       nav {
@@ -316,9 +338,7 @@ header {
       }
       .headerBox {
         justify-content: space-between;
-        .sns_container {
-          display: flex;
-          padding-left: 20px;
+        .icons {
           display: none;
         }
       }
@@ -336,23 +356,24 @@ header {
           display: flex;
           justify-content: space-around;
           height: 50px;
-          li {
+          a {
+            width: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
+          }
+          .emailBox {
+            border: 1px solid #000;
+            background-color: rgb(240, 0, 116);
+          }
+          .phoneBox {
+            border: 1px solid #000;
+            background-color: rgb(0, 237, 39);
+          }
+          li {
             i {
               font-size: 24px;
             }
-          }
-          .email {
-            width: 50%;
-            background-color: purple;
-            border: 1px solid #000;
-          }
-          .phone {
-            width: 50%;
-            background-color: rgb(41, 131, 227);
-            border: 1px solid #000;
           }
           img {
             display: block;
@@ -388,13 +409,13 @@ header {
       }
       .cut {
         .cutTitle {
-          font-size: 13px;
+          font-size: 12px;
         }
         .cutPrice3 {
-          font-size: 13px;
+          font-size: 12px;
         }
         .cutPrice {
-          font-size: 13px;
+          font-size: 12px;
         }
       }
     }
