@@ -286,37 +286,66 @@ header {
   }
 }
 // ----------------------------------- footer -----------------------------------------
-footer {
-  width: 100%;
-}
-
-// ----------------------------------- SP -----------------------------------------
-@media (max-width: 1158px) {
-  header {
-    background-color: rgba(60, 60, 60, 0.685);
-    .headerBox {
-      .sns_container {
-        display: flex;
-        padding-left: 20px;
-        display: none;
-      }
-    }
+.footerBox {
+  p {
+    text-align: center;
+    font-size: 12px;
+  }
+  .footer_sns {
+    display: none;
   }
 }
+// ----------------------------------- SP -----------------------------------------
 
-@media (max-width: 1040px) {
+@media (max-width: 950px) {
   body {
     font-size: 14px;
-  }
-  header {
-    .hamburger {
-      display: block;
+    header {
+      background-color: rgba(60, 60, 60, 0.685);
+      .hamburger {
+        display: block;
+      }
+      nav {
+        display: none;
+      }
+      .headerBox {
+        justify-content: space-between;
+        .sns_container {
+          display: flex;
+          padding-left: 20px;
+          display: none;
+        }
+      }
     }
-    nav {
-      display: none;
-    }
-    .headerBox {
-      justify-content: space-between;
+    footer {
+      width: 100%;
+      .footerBox {
+        height: 75px;
+        border: 1px solid #000;
+        .footer_sns {
+          position: fixed;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          display: flex;
+          justify-content: space-around;
+          .insta {
+            width: 50%;
+            background-color: purple;
+            border: 1px solid #000;
+          }
+          .facebook {
+            width: 50%;
+            background-color: rgb(41, 131, 227);
+            border: 1px solid #000;
+          }
+          img {
+            display: block;
+            width: 30px;
+            margin: 10px auto;
+          }
+        }
+      }
     }
   }
 }
