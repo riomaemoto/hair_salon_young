@@ -7,9 +7,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ヤング</title>
   <link rel="stylesheet" href="./sass/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP" rel="stylesheet">
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   <script src="https://kit.fontawesome.com/1c70550d95.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
   <script src="./main.js"></script>
 </head>
 
@@ -19,37 +21,191 @@
       <img src="./img/logo-white.png" alt="">
       <nav>
         <ul class="nav_list">
-          <li>Online Booking</li>
-          <li>Locations</li>
-          <li>Services</li>
-          <li>Shop</li>
-          <li>About</li>
-          <li>Coffee</li>
-          <li>Events</li>
-          <li>Contacts</li>
+          <li><a href="tel:0988970236">電話予約</a></li>
+          <li><a href="#menu">料金一覧</a></li>
+          <li><a href="">店内写真</a></li>
+          <li><a href="#location">ロケーション</a></li>
+          <li><a href="#contact">お問い合せ</a></li>
         </ul>
       </nav>
+      <ul class="icons">
+        <a href="#contact">
+          <li class="email">
+            <i class="fa fa-envelope" aria-hidden="true"></i>
+          </li>
+        </a>
+        <a href="tel:0988970236">
+          <li class="phone">
+            <i class="fa fa-phone" aria-hidden="true"></i>
+          </li>
+        </a>
+      </ul>
       <div class="hamburger">
-        <div class="line-top"></div>
-        <div class="line-middle"></div>
-        <div class="line-bottom"></div>
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
       </div>
     </div>
-    <div class="closeList">
-      <div class="listContent">
-        <ul>
-          <li>Online Booking</li>
-          <li>Locations</li>
-          <li>Services</li>
-          <li>Shop</li>
-          <li>About</li>
-          <li>Coffee</li>
-          <li>Events</li>
-          <li>Contacts</li>
-        </ul>
-      </div>
+    <div class="listContent">
+      <ul class="nav_list">
+        <li><a href="tel:0988970236">電話予約</a></li>
+        <li><a href="#menu">料金一覧</a></li>
+        <li><a href="">店内写真</a></li>
+        <li><a href="#location">ロケーション</a></li>
+        <li><a href="#contact">お問い合せ</a></li>
+      </ul>
     </div>
   </header>
+
+  <div class="seeThrough">
+    <div class="wrap">
+      <div class="seeThroughBox">
+        <h1 class="middle_h1_text">お客様の理想とする <br> ヘアスタイリングをきめ細かく丁寧に<br>カット致します</h1>
+      </div>
+    </div>
+  </div>
+
+  <section class="illustration">
+    <div class="wrap">
+      <div class="category">
+        <div class="category_picture">
+          <a href="#location" class="illustration1">
+            <img class="paddingL" src="./img/illustrator1.png" alt="">
+          </a>
+          <div class="category_title">ロケーション</div>
+
+        </div>
+        <div class="category_picture">
+          <a href="tel:0988970236" class="illustration1">
+            <img src="./img/illustrator2.png" alt="">
+          </a>
+          <div class="category_title">電話予約</div>
+
+        </div>
+        <div class="category_picture">
+          <a href="#menu" class="illustration1">
+            <img src="./img/illustrator3.png" alt="">
+          </a>
+          <div class="category_title">料金一覧</div>
+
+        </div>
+        <div class="category_picture">
+          <a href="#contact" class="illustration1">
+            <img src="./img/illustrator4.png" alt="">
+          </a>
+          <div class="category_title">お問合せ</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="menu" id="menu">
+      <div class="wrap">
+        <div class="menu_container">
+          <h2>✂︎メニュー／MENU✂︎</h2>
+          <div class="cut">
+            <div>
+              <p class="cutTitle">カットのみ／CUT</p>
+              <p class="cutTitle">カット&カラー／CUT＆COLOR</p>
+              <p class="cutTitle">カラーのみ／COLOR</p>
+              <p class="cutTitle">キッズ／KIDS</p>
+              <p class="cutTitle">ヒゲのみ／BEARD</p>
+            </div>
+            <div>
+              <p class="cutPrice">2,500円</p>
+              <p class="cutPrice">5,000円</p>
+              <p class="cutPrice3">2,500円</p>
+              <p class="cutPrice">2,000円</p>
+              <p class="cutPrice">1,000円</p>
+            </div>
+          </div>
+        </div>
+        <div class="menu_container">
+          <h2>商品／PRODUCT</h2>
+          <div class="cut">
+            <div>
+              <p class="cutTitle">シャンプー／SHAMPOO</p>
+              <p class="cutTitle">トリートメント／TREATMENT</p>
+              <p class="cutTitle">シェービングジェル/SHAVING GEL</p>
+            </div>
+            <div>
+              <p class="cutPrice">2,500円</p>
+              <p class="cutPrice">3,000円</p>
+              <p class="cutPrice">2,500円</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="google_map" id="location">
+      <div class="wrap">
+        <h2>場所／Location
+          <img class="location" src="./img/location.png" alt="">
+        </h2>
+        <a class="mappApp" href="https://maps.app.goo.gl/5jUdSv9DwBtBigTcA?g_st=com.tinyspeck.chatlyio.share"
+          target="_blank" rel="noopener noreferrer">
+          マップで開く<i class="fa fa-external-link" aria-hidden="true"></i>
+        </a>
+        <p class="address">住所：〒901-2224 沖縄県宜野湾市真志喜582-4</p>
+        <div class="map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1788.8163816492456!2d127.73235930326406!3d26.273579641180838!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34e56ca2c7d2c613%3A0x7652fc024ae7b50f!2z44OY44Ki44O844K544K_44Kk44Oq44K544OI44K144Ot44OzIOODpOODs-OCsA!5e0!3m2!1sen!2sjp!4v1666194018860!5m2!1sen!2sjp"
+            width="900" height="500" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="hours">
+      <div class="wrap">
+        <h2>営業時間／Hours</h2>
+        <div class="daysBox">
+          <p class="days">火曜日〜日曜日 9:30 〜 18:00</p>
+          <p class="days">月曜日　定休日</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="contact" id="contact">
+    <div class="wrap">
+      <h2>お問合せ／Contact</h2>
+      <div class="form">
+        <div class="form1">
+          <p><span>*</span>名前</p>
+          <input type="text" placeholder="Name" id="inputName" name="name">
+          <p><span>*</span>メールアドレス</p>
+          <input type="email" placeholder="Email" id="inputEmail" name="email">
+        </div>
+
+        <div class="form2">
+          <div class="message"><span>*</span>メッセージ</div>
+          <textarea placeholder="Message" name="message" id="inputContents" cols="30" rows="7"></textarea>
+          <br>
+          <div class="button" id="pushTheButton">送信</div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="wrap">
+      <div class="footerBox">
+        <ul class="footer_sns">
+          <a href="#contact" class="emailBox">
+            <li class="email">
+              <i class="fa fa-envelope" aria-hidden="true"></i>
+            </li>
+          </a>
+          <a href="tel:0988970236" class="phoneBox">
+            <li class="phone">
+              <i class="fa fa-phone" aria-hidden="true"></i>
+            </li>
+          </a>
+        </ul>
+        <p>Copyright All Right Reserved 2022 &copy ヤング</p>
+      </div>
+    </div>
+  </footer>
 </body>
+
 
 </html>
