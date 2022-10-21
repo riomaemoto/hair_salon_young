@@ -225,6 +225,12 @@ header {
       height: 50vh;
     }
   }
+  a {
+    display: block;
+    color: $mainColor;
+    text-align: center;
+    text-decoration: underline;
+  }
 }
 
 // ----------------------------------- hours -----------------------------------------
@@ -329,12 +335,21 @@ header {
           width: 100%;
           display: flex;
           justify-content: space-around;
-          .insta {
+          height: 50px;
+          li {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            i {
+              font-size: 24px;
+            }
+          }
+          .email {
             width: 50%;
             background-color: purple;
             border: 1px solid #000;
           }
-          .facebook {
+          .phone {
             width: 50%;
             background-color: rgb(41, 131, 227);
             border: 1px solid #000;
@@ -398,10 +413,15 @@ header {
   .contact {
     .form {
       flex-direction: column;
+      span {
+        color: red;
+      }
       input {
+        padding-left: 10px;
         width: 70%;
       }
       textarea {
+        padding-left: 10px;
         width: 70%;
       }
       .button {

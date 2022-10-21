@@ -10,6 +10,8 @@
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   <script src="https://kit.fontawesome.com/1c70550d95.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <!-- <script src="./send.js"></script> -->
   <script src="./main.js"></script>
 </head>
 
@@ -20,11 +22,10 @@
       <nav>
         <ul class="nav_list">
           <li><a href="tel:0988970236">電話予約</a></li>
-          <li><a href="">料金</a></li>
+          <li><a href="#menu">料金一覧</a></li>
           <li><a href="">店内写真</a></li>
-          <li><a href="">ロケーション</a></li>
-          <li><a href="">オーナー紹介</a></li>
-          <li><a href="">お問い合せ</a></li>
+          <li><a href="#location">ロケーション</a></li>
+          <li><a href="#contact">お問い合せ</a></li>
         </ul>
       </nav>
       <ul class="sns_container">
@@ -48,11 +49,10 @@
     <div class="listContent">
       <ul class="nav_list">
         <li><a href="tel:0988970236">電話予約</a></li>
-        <li><a href="">料金</a></li>
+        <li><a href="#menu">料金一覧</a></li>
         <li><a href="">店内写真</a></li>
-        <li><a href="">ロケーション</a></li>
-        <li><a href="">オーナー紹介</a></li>
-        <li><a href="">お問い合せ</a></li>
+        <li><a href="#location">ロケーション</a></li>
+        <li><a href="#contact">お問い合せ</a></li>
       </ul>
     </div>
   </header>
@@ -79,26 +79,26 @@
           <a href="https://www.portersbarbers.co.uk//location/" class="illustration1">
             <img src="./img/illustrator2.png" alt="">
           </a>
-          <div class="category_title">オンライン予約</div>
+          <div class="category_title">電話予約</div>
 
         </div>
         <div class="category_picture">
           <a href="https://www.portersbarbers.co.uk//location/" class="illustration1">
             <img src="./img/illustrator3.png" alt="">
           </a>
-          <div class="category_title">商品一覧</div>
+          <div class="category_title">料金一覧</div>
 
         </div>
         <div class="category_picture">
           <a href="https://www.portersbarbers.co.uk//location/" class="illustration1">
             <img src="./img/illustrator4.png" alt="">
           </a>
-          <div class="category_title">カット</div>
+          <div class="category_title">オーナー紹介</div>
         </div>
       </div>
     </div>
 
-    <div class="menu">
+    <div class="menu" id="menu">
       <div class="wrap">
         <div class="menu_container">
           <h2>✂︎メニュー／MENU✂︎</h2>
@@ -111,11 +111,11 @@
               <p class="cutTitle">ヒゲのみ／BEARD</p>
             </div>
             <div>
-              <p class="cutPrice">¥2500</p>
-              <p class="cutPrice">¥5000</p>
-              <p class="cutPrice3">¥2500</p>
-              <p class="cutPrice">¥2000</p>
-              <p class="cutPrice">¥1000</p>
+              <p class="cutPrice">2,500円</p>
+              <p class="cutPrice">5,000円</p>
+              <p class="cutPrice3">2,500円</p>
+              <p class="cutPrice">2,000円</p>
+              <p class="cutPrice">1,000円</p>
             </div>
           </div>
         </div>
@@ -128,19 +128,23 @@
               <p class="cutTitle">シェービングジェル/SHAVING GEL</p>
             </div>
             <div>
-              <p class="cutPrice">¥2500</p>
-              <p class="cutPrice">¥5000</p>
-              <p class="cutPrice">¥2500</p>
+              <p class="cutPrice">2,500円</p>
+              <p class="cutPrice">5,000円</p>
+              <p class="cutPrice">2,500円</p>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="google_map">
+    <div class="google_map" id="location">
       <div class="wrap">
         <h2>場所／Location
           <img class="location" src="./img/location.png" alt="">
         </h2>
+        <a class="mappApp" href="https://maps.app.goo.gl/5jUdSv9DwBtBigTcA?g_st=com.tinyspeck.chatlyio.share"
+          target="_blank" rel="noopener noreferrer">
+          マップで開く<i class="fa fa-external-link" aria-hidden="true"></i>
+        </a>
         <p class="address">住所：〒901-2224 沖縄県宜野湾市真志喜582-4</p>
         <div class="map">
           <iframe
@@ -149,6 +153,7 @@
             referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
       </div>
+
     </div>
 
     <div class="hours">
@@ -161,22 +166,22 @@
       </div>
     </div>
   </section>
-  <section class="contact">
+  <section class="contact" id="contact">
     <div class="wrap">
-      <h2>お問合せ</h2>
+      <h2>お問合せ／Contact</h2>
       <div class="form">
         <div class="form1">
-          <p>名前／Name</p>
+          <p><span>*</span>名前</p>
           <input type="text" placeholder="Name" id="inputName" name="name">
-          <p>メールアドレス／Email</p>
+          <p><span>*</span>メールアドレス</p>
           <input type="email" placeholder="Email" id="inputEmail" name="email">
         </div>
 
         <div class="form2">
-          <div class="message">メッセージ／Message</div>
-          <textarea name="message" id="inputContents" cols="30" rows="7"></textarea>
+          <div class="message"><span>*</span>メッセージ</div>
+          <textarea placeholder="Message" name="message" id="inputContents" cols="30" rows="7"></textarea>
           <br>
-          <div class="button">送信／Send</div>
+          <div class="button" id="pushTheButton">送信</div>
         </div>
       </div>
     </div>
@@ -185,14 +190,14 @@
     <div class="wrap">
       <div class="footerBox">
         <ul class="footer_sns">
-          <li class="insta">
-            <a href="https://www.instagram.com">
-              <img src="./img/instagram.png" alt="">
+          <li class="email">
+            <a href="">
+              <i class="fa fa-envelope" aria-hidden="true"></i>
             </a>
           </li>
-          <li class="facebook">
-            <a href="https://www.facebook.com">
-              <img src="./img/facebook.png" alt="">
+          <li class="phone">
+            <a href="tel:0988970236">
+              <i class="fa fa-phone" aria-hidden="true"></i>
             </a>
           </li>
         </ul>
@@ -201,7 +206,6 @@
     </div>
   </footer>
 </body>
-<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-<script src="js/send.js"></script>
+
 
 </html>
