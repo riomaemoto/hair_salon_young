@@ -3,7 +3,6 @@ emailjs.init("iXD6JCsR5Tqlncl");
 
 // send mail
 element.addEventListener("click", () => {
-  console.log("success");
   const inputName = document.querySelector("#inputName").value;
   const inputEmail = document.querySelector("#inputEmail").value;
   const inputContents = document.querySelector("#inputContents").value;
