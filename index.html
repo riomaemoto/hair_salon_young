@@ -19,12 +19,11 @@
       <img src="./img/logo-white.png" alt="">
       <nav>
         <ul class="nav_list">
-          <li><a href="">オンライン予約</a></li>
+          <li><a href="tel:0988970236">電話予約</a></li>
           <li><a href="">料金</a></li>
           <li><a href="">店内写真</a></li>
           <li><a href="">ロケーション</a></li>
           <li><a href="">オーナー紹介</a></li>
-          <li><a href="">お電話</a></li>
           <li><a href="">お問い合せ</a></li>
         </ul>
       </nav>
@@ -48,12 +47,10 @@
     </div>
     <div class="listContent">
       <ul class="nav_list">
-        <li><a href="">オンライン予約</a></li>
+        <li><a href="tel:0988970236">電話予約</a></li>
         <li><a href="">料金</a></li>
         <li><a href="">店内写真</a></li>
         <li><a href="">ロケーション</a></li>
-        <li><a href="">商品紹介</a></li>
-        <li><a href="">ヤングについて</a></li>
         <li><a href="">オーナー紹介</a></li>
         <li><a href="">お問い合せ</a></li>
       </ul>
@@ -104,7 +101,7 @@
     <div class="menu">
       <div class="wrap">
         <div class="menu_container">
-          <h2>メニュー／MENU</h2>
+          <h2>✂︎メニュー／MENU✂︎</h2>
           <div class="cut">
             <div>
               <p class="cutTitle">カットのみ／CUT</p>
@@ -141,7 +138,9 @@
     </div>
     <div class="google_map">
       <div class="wrap">
-        <h2>場所／Location</h2>
+        <h2>場所／Location
+          <img class="location" src="./img/location.png" alt="">
+        </h2>
         <p class="address">住所：〒901-2224 沖縄県宜野湾市真志喜582-4</p>
         <div class="map">
           <iframe
@@ -154,10 +153,33 @@
 
     <div class="hours">
       <div class="wrap">
-
+        <h2>営業時間／Hours</h2>
+        <div class="daysBox">
+          <p class="days">火曜日〜日曜日 9:30 〜 18:00</p>
+          <p class="days">月曜日　定休日</p>
+        </div>
       </div>
     </div>
+  </section>
+  <section class="contact">
+    <div class="wrap">
+      <h2>お問合せ</h2>
+      <div class="form">
+        <div>
+          <p>名前／Name</p>
+          <input type="text" placeholder="Name" id="inputName" name="name">
+          <p>メールアドレス／Email</p>
+          <input type="email" placeholder="Email" id="inputEmail" name="email">
+          <p>メッセージ／Message</p>
+        </div>
 
+        <div>
+          <textarea name="message" id="inputContents" cols="30" rows="7"></textarea>
+          <br>
+          <div class="button">送信／Send</div>
+        </div>
+      </div>
+    </div>
   </section>
   <footer>
     <div class="wrap">
@@ -165,5 +187,7 @@
     </div>
   </footer>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<script src="js/send.js"></script>
 
 </html>
