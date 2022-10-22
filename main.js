@@ -1,11 +1,42 @@
 emailjs.init("H-iXD6JCsR5Tqlncl");
 
 $(function () {
+  const seeThrough = $('.seeThrough');
+  const line1 = $('.line1');
+  const line2 = $('.line2');
+  const line3 = $('.line3');
   $(".hamburger").on("click", function () {
     $(".listContent").slideToggle(500)
-    $(".line1").toggleClass("open")
-    $(".line2").toggleClass("open")
-    $(".line3").toggleClass("open")
+    line1.toggleClass("open")
+    line2.toggleClass("open")
+    line3.toggleClass("open")
+
+    if (line1.hasClass('open')) {
+      seeThrough.on('click', function () {
+        line1.removeClass('open');
+        line2.removeClass('open');
+        line3.removeClass('open');
+        $('.listContent').slideUp();
+      });
+      $(".listContent").on('click', function () {
+        line1.removeClass('open');
+        line2.removeClass('open');
+        line3.removeClass('open');
+        $('.listContent').slideUp();
+      });
+      $(".illustration").on('click', function () {
+        line1.removeClass('open');
+        line2.removeClass('open');
+        line3.removeClass('open');
+        $('.listContent').slideUp();
+      });
+      $(".footerBox").on('click', function () {
+        line1.removeClass('open');
+        line2.removeClass('open');
+        line3.removeClass('open');
+        $('.listContent').slideUp();
+      });
+    }
   })
 
   $("#pushTheButton").on("click", function () {
