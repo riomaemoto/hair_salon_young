@@ -52,8 +52,9 @@ header .headerBox {
   margin: 0px auto;
   padding: 20px 20px;
 }
-header .headerBox img {
-  width: 156px;
+header .headerBox h2 {
+  color: white;
+  width: 220px;
 }
 header .headerBox .nav_list {
   display: flex;
@@ -204,6 +205,7 @@ header .headerBox .icons img {
   width: 40px;
 }
 .google_map .address {
+  padding: 0 5px;
   text-align: center;
   margin: 40px auto;
   font-size: 18px;
@@ -262,6 +264,7 @@ header .headerBox .icons img {
   padding: 20px;
 }
 .contact .form input {
+  padding-left: 10px;
   width: 100%;
   height: 30px;
 }
@@ -269,6 +272,7 @@ header .headerBox .icons img {
   margin-top: 20px;
 }
 .contact .form textarea {
+  padding-left: 10px;
   margin-top: 20px;
   width: 90%;
 }
