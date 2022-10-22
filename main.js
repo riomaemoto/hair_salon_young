@@ -5,6 +5,7 @@ $(function () {
   const line1 = $('.line1');
   const line2 = $('.line2');
   const line3 = $('.line3');
+
   $(".hamburger").on("click", function () {
     $(".listContent").slideToggle(500)
     line1.toggleClass("open")
