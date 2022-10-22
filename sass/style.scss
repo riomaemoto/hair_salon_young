@@ -61,8 +61,9 @@ header {
     @include mixin_width();
     padding: 20px 20px;
 
-    img {
-      width: 156px;
+    h2 {
+      color: $whiteColor;
+      width: 220px;
     }
 
     .nav_list {
@@ -137,28 +138,6 @@ header {
   font-size: 20px;
 }
 
-// --------------------------------illustration-------------------------------------------
-
-.illustration {
-  .category {
-    display: flex;
-    justify-content: center;
-    padding: 100px 0;
-    .category_picture {
-      margin: 50px auto;
-      .paddingL {
-        padding-left: 15px;
-      }
-      img {
-        height: 150px;
-      }
-      .category_title {
-        text-align: center;
-      }
-    }
-  }
-}
-
 // ----------------------------------- see through -----------------------------------------
 
 .seeThrough {
@@ -188,7 +167,7 @@ header {
 
 .menu {
   width: 100%;
-  margin-bottom: 120px;
+  margin: 120px auto;
   .menu_container {
     margin: 0 auto;
     h2 {
@@ -230,6 +209,7 @@ header {
     width: 40px;
   }
   .address {
+    padding: 0 5px;
     text-align: center;
     margin: 40px auto;
     font-size: 18px;
@@ -254,6 +234,7 @@ header {
   width: 100%;
   height: 100%;
   text-align: center;
+  margin: 100px auto;
   h2 {
     margin: 30px;
     margin-top: 100px;
@@ -289,6 +270,7 @@ header {
       padding: 20px;
     }
     input {
+      padding-left: 10px;
       width: 100%;
       height: 30px;
     }
@@ -296,6 +278,7 @@ header {
       margin-top: 20px;
     }
     textarea {
+      padding-left: 10px;
       margin-top: 20px;
       width: 90%;
     }
@@ -394,9 +377,6 @@ header {
         top: 40%;
       }
     }
-  }
-  .category {
-    flex-direction: column;
   }
 }
 

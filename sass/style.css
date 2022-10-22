@@ -52,8 +52,9 @@ header .headerBox {
   margin: 0px auto;
   padding: 20px 20px;
 }
-header .headerBox img {
-  width: 156px;
+header .headerBox h2 {
+  color: white;
+  width: 220px;
 }
 header .headerBox .nav_list {
   display: flex;
@@ -119,24 +120,6 @@ header .headerBox .icons img {
   font-size: 20px;
 }
 
-.illustration .category {
-  display: flex;
-  justify-content: center;
-  padding: 100px 0;
-}
-.illustration .category .category_picture {
-  margin: 50px auto;
-}
-.illustration .category .category_picture .paddingL {
-  padding-left: 15px;
-}
-.illustration .category .category_picture img {
-  height: 150px;
-}
-.illustration .category .category_picture .category_title {
-  text-align: center;
-}
-
 .seeThrough {
   background-image: url(../img/barbershop-g4906e9660_1920.jpg);
   background-repeat: no-repeat;
@@ -162,7 +145,7 @@ header .headerBox .icons img {
 
 .menu {
   width: 100%;
-  margin-bottom: 120px;
+  margin: 120px auto;
 }
 .menu .menu_container {
   margin: 0 auto;
@@ -204,6 +187,7 @@ header .headerBox .icons img {
   width: 40px;
 }
 .google_map .address {
+  padding: 0 5px;
   text-align: center;
   margin: 40px auto;
   font-size: 18px;
@@ -226,6 +210,7 @@ header .headerBox .icons img {
   width: 100%;
   height: 100%;
   text-align: center;
+  margin: 100px auto;
 }
 .hours h2 {
   margin: 30px;
@@ -262,6 +247,7 @@ header .headerBox .icons img {
   padding: 20px;
 }
 .contact .form input {
+  padding-left: 10px;
   width: 100%;
   height: 30px;
 }
@@ -269,6 +255,7 @@ header .headerBox .icons img {
   margin-top: 20px;
 }
 .contact .form textarea {
+  padding-left: 10px;
   margin-top: 20px;
   width: 90%;
 }
@@ -357,9 +344,6 @@ header .headerBox .icons img {
   }
   .seeThrough .seeThroughBox .middle_h1_text {
     top: 40%;
-  }
-  .category {
-    flex-direction: column;
   }
 }
 @media (max-width: 473px) {
