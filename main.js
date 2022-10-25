@@ -40,19 +40,34 @@ $(function () {
     }
   })
 
-  $("#pushTheButton").on("click", function () {
+  $("#pushTheButton").on("click", function (e) {
     const inputName = $("#inputName").val();
     const inputEmail = $("#inputEmail").val();
     const inputContents = $("#inputContents").val();
-    const templateVariables = {
-      email: inputEmail,
-      to_name: "leo",
-      from_name: inputName,
-      contents: inputContents,
+    if ($("#inputName").val() === '') {
+      alert("名前を入力してください");
+      return false;
+    } else if ($("#inputEmail").val() === '') {
+      alert("メールアドレスを入力してください");
+      return false;
+    } else if ($("#inputContents").val() === '') {
+      alert("テキストを入力してください");
+      return false;
+    } else {
+      const templateVariables = {
+        email: inputEmail,
+        to_name: "leo",
+        from_name: inputName,
+        contents: inputContents,
+      };
+      emailjs
+        .send("service_ni3z47a", "template_qt15ukd", templateVariables)
+        .then(() => console.log("success"));
+      $("#inputName").val("");
+      $("#inputEmail").val("");
+      $("#inputContents").val("");
+      alert("送信しました");
     };
-    emailjs
-      .send("service_ni3z47a", "template_qt15ukd", templateVariables)
-      .then(() => console.log("success"));
   })
 })
 
