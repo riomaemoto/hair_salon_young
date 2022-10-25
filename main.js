@@ -41,9 +41,11 @@ $(function () {
   })
 
   $("#pushTheButton").on("click", function () {
+
     const inputName = $("#inputName").val();
     const inputEmail = $("#inputEmail").val();
     const inputContents = $("#inputContents").val();
+
     const templateVariables = {
       email: inputEmail,
       to_name: "leo",
@@ -53,6 +55,7 @@ $(function () {
     emailjs
       .send("service_ni3z47a", "template_qt15ukd", templateVariables)
       .then(() => console.log("success"));
+
   })
 })
 

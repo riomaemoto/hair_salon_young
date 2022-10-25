@@ -267,7 +267,6 @@ header .headerBox .icons img {
   background-color: rgba(0, 255, 30, 0.403);
 }
 .contact .form .button:hover {
-  border: 0.2px solid #000;
   background-color: rgba(0, 255, 30, 0.811);
 }
 
