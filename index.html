@@ -139,20 +139,20 @@
   <section class="contact" id="contact">
     <div class="wrap">
       <h2>お問合せ／Contact</h2>
-      <div class="form">
+      <form class="form">
         <div class="form1">
           <p>名前<span>*</span></p>
-          <input type="text" placeholder="Name" id="inputName" name="name">
+          <input type="text" placeholder="Name" id="inputName" name="name" required>
           <p>メールアドレス<span>*</span></p>
-          <input type="email" placeholder="Email" id="inputEmail" name="email">
+          <input type="email" placeholder="Email" id="inputEmail" name="email" required>
         </div>
         <div class="form2">
           <div class="message">メッセージ<span>*</span></div>
-          <textarea placeholder="Message" name="message" id="inputContents" cols="30" rows="7"></textarea>
+          <textarea placeholder="Message" name="message" id="inputContents" cols="30" rows="7" required></textarea>
           <br>
-          <button class="button" id="pushTheButton">送信</button>
+          <button class="button" id="pushTheButton" type="submit">送信</button>
         </div>
-      </div>
+      </form>
     </div>
   </section>
   <footer>
