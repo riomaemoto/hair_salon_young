@@ -45,7 +45,18 @@ $(function () {
     const inputName = $("#inputName").val();
     const inputEmail = $("#inputEmail").val();
     const inputContents = $("#inputContents").val();
-
+    if ($("#inputName").val() === '') {
+      alert("名前を入力してください");
+      return false;
+    } else if ($("#inputEmail").val() === '') {
+      alert("メールアドレスを入力してください");
+      return false;
+    } else if ($("#inputContents").val() === '') {
+      alert("テキストを入力してください");
+      return false;
+    } else {
+      alert("送信しました");
+    };
     const templateVariables = {
       email: inputEmail,
       to_name: "leo",
@@ -55,7 +66,6 @@ $(function () {
     emailjs
       .send("service_ni3z47a", "template_qt15ukd", templateVariables)
       .then(() => console.log("success"));
-
   })
 })
 
