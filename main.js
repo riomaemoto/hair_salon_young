@@ -40,7 +40,7 @@ $(function () {
     }
   })
 
-  $("#pushTheButton").on("click", function () {
+  $("#pushTheButton").on("click", function (e) {
 
     const inputName = $("#inputName").val();
     const inputEmail = $("#inputEmail").val();
@@ -55,17 +55,18 @@ $(function () {
       alert("テキストを入力してください");
       return false;
     } else {
+      const templateVariables = {
+        email: inputEmail,
+        to_name: "leo",
+        from_name: inputName,
+        contents: inputContents,
+      };
+      emailjs
+        .send("service_ni3z47a", "template_qt15ukd", templateVariables)
+        .then(() => console.log("success"));
       alert("送信しました");
     };
-    const templateVariables = {
-      email: inputEmail,
-      to_name: "leo",
-      from_name: inputName,
-      contents: inputContents,
-    };
-    emailjs
-      .send("service_ni3z47a", "template_qt15ukd", templateVariables)
-      .then(() => console.log("success"));
+    e.preventDefault();
   })
 })
 
