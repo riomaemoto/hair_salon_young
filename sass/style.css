@@ -367,14 +367,14 @@ header .headerBox .icons img {
   }
   body footer .footerBox .footer_sns .emailBox {
     background-color: rgb(0, 161, 240);
-    margin: 25px;
+    margin: 15px;
     margin-right: 4px;
     border-radius: 10px;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2509803922);
   }
   body footer .footerBox .footer_sns .phoneBox {
     background-color: rgb(0, 224, 37);
-    margin: 25px;
+    margin: 15px;
     margin-left: 4px;
     border-radius: 10px;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2509803922);
