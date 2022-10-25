@@ -5,6 +5,14 @@ $(function () {
   const line1 = $('.line1');
   const line2 = $('.line2');
   const line3 = $('.line3');
+  $(".storeName").css("cursor", "pointer");
+
+  $(".storeName").on("click", function () {
+    window.scroll({
+      top: 0,
+      behavior: 'smooth'
+    });
+  })
 
   $(".hamburger").on("click", function () {
     $(".listContent").slideToggle(500)
