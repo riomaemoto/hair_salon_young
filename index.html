@@ -19,7 +19,7 @@
 <body>
   <header>
     <div class="headerBox">
-      <h2>HairStylistヤング</h2>
+      <h2 class="storeName">HairStylistヤング</h2>
       <nav>
         <ul class="nav_list">
           <li><a href="tel:0988970236">電話予約</a></li>
@@ -139,21 +139,20 @@
   <section class="contact" id="contact">
     <div class="wrap">
       <h2>お問合せ／Contact</h2>
-      <div class="form">
+      <form class="form">
         <div class="form1">
-          <p><span>*</span>名前</p>
-          <input type="text" placeholder="Name" id="inputName" name="name">
-          <p><span>*</span>メールアドレス</p>
-          <input type="email" placeholder="Email" id="inputEmail" name="email">
+          <p>名前<span>*</span></p>
+          <input type="text" placeholder="Name" id="inputName" name="name" required>
+          <p>メールアドレス<span>*</span></p>
+          <input type="email" placeholder="Email" id="inputEmail" name="email" required>
         </div>
-
         <div class="form2">
-          <div class="message"><span>*</span>メッセージ</div>
-          <textarea placeholder="Message" name="message" id="inputContents" cols="30" rows="7"></textarea>
+          <div class="message">メッセージ<span>*</span></div>
+          <textarea placeholder="Message" name="message" id="inputContents" cols="30" rows="7" required></textarea>
           <br>
-          <button class="button" id="pushTheButton">送信</button>
+          <button class="button" id="pushTheButton" type="submit"><span class="sendText"></span></button>
         </div>
-      </div>
+      </form>
     </div>
   </section>
   <footer>
