@@ -8,33 +8,29 @@ $(function () {
 
   $(".hamburger").on("click", function () {
     $(".listContent").slideToggle(500)
-    line1.toggleClass("open")
-    line2.toggleClass("open")
-    line3.toggleClass("open")
+    line1.addClass("open")
+    line2.addClass("open")
+    line3.addClass("open")
 
     if (line1.hasClass('open')) {
       seeThrough.on('click', function () {
-        line1.removeClass('open');
-        line2.removeClass('open');
-        line3.removeClass('open');
+        $('.open').removeClass('open');
         $('.listContent').slideUp();
       });
       $(".listContent").on('click', function () {
-        line1.removeClass('open');
-        line2.removeClass('open');
-        line3.removeClass('open');
+        $('.open').removeClass('open');
         $('.listContent').slideUp();
       });
       $(".illustration").on('click', function () {
-        line1.removeClass('open');
-        line2.removeClass('open');
-        line3.removeClass('open');
+        $('.open').removeClass('open');
+        $('.listContent').slideUp();
+      });
+      $(".contact").on('click', function () {
+        $('.open').removeClass('open');
         $('.listContent').slideUp();
       });
       $(".footerBox").on('click', function () {
-        line1.removeClass('open');
-        line2.removeClass('open');
-        line3.removeClass('open');
+        $('.open').removeClass('open');
         $('.listContent').slideUp();
       });
     }
