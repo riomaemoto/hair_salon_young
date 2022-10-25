@@ -47,6 +47,7 @@ li {
 
 $mainColor: black;
 $whiteColor: white;
+$skyColor: rgb(0, 183, 255);
 
 header {
   z-index: 5;
@@ -226,6 +227,8 @@ header {
     color: $mainColor;
     text-align: center;
     text-decoration: underline;
+    width: 100px;
+    margin: 0 auto;
   }
 }
 
@@ -291,9 +294,13 @@ header {
       width: 90%;
       margin: 10px auto;
       border-radius: 5px;
-      background-color: rgba(0, 255, 30, 0.403);
+      background-color: $whiteColor;
+      border: 1px solid $skyColor;
       &:hover {
-        background-color: rgba(0, 255, 30, 0.811);
+        background-color: $skyColor;
+        .sendText:before {
+          color: $whiteColor;
+        }
       }
     }
   }
@@ -302,7 +309,7 @@ header {
 // ----------------------------------- spinner -----------------------------------------
 .sendText:before {
   content: "送信";
-  color: $mainColor;
+  color: $skyColor;
 }
 
 .loader {
@@ -375,12 +382,18 @@ header {
             justify-content: center;
           }
           .emailBox {
-            border: 1px solid #000;
-            background-color: rgb(240, 0, 116);
+            background-color: rgb(0, 161, 240);
+            margin: 8px;
+            margin-right: 4px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 2px 1px #00000040;
           }
           .phoneBox {
-            border: 1px solid #000;
-            background-color: rgb(0, 237, 39);
+            background-color: rgb(0, 224, 37);
+            margin: 8px;
+            margin-left: 4px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 2px 1px #00000040;
           }
           li {
             i {
@@ -396,6 +409,15 @@ header {
       }
     }
   }
+}
+
+.footerBtn {
+  background-color: rgb(0, 161, 240);
+  margin: 5px;
+  margin-right: 5px;
+  margin-right: 2.5px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px 1px #00000040;
 }
 
 @media (max-width: 940px) {
