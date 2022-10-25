@@ -1,4 +1,5 @@
 emailjs.init("H-iXD6JCsR5Tqlncl");
+let isLoading = false;
 
 $(function () {
   const seeThrough = $('.seeThrough');
@@ -46,6 +47,10 @@ $(function () {
 
   $(".form").submit(function (e) {
     e.preventDefault();
+    if (isLoading) {
+      return;
+    }
+    isLoading = true;
     const inputName = $("#inputName").val();
     const inputEmail = $("#inputEmail").val();
     const inputContents = $("#inputContents").val();
@@ -55,14 +60,22 @@ $(function () {
       from_name: inputName,
       contents: inputContents,
     };
+    $(".sendText").addClass("loader");
+    $(".sendText").removeClass("sendText");
     emailjs
       .send("service_ni3z47a", "template_qt15ukd", templateVariables)
       .then(() => {
+        $(".loader").addClass("sendText");
+        $(".loader").removeClass("loader");
+        $("#inputName").val("");
+        $("#inputEmail").val("");
+        $("#inputContents").val("");
         alert("送信しました");
-      }).catch(err => console.log(err.toString()));
-    $("#inputName").val("");
-    $("#inputEmail").val("");
-    $("#inputContents").val("");
+      }).catch(err => console.log(err.toString()))
+      .finally(() => {
+        isLoading = false;
+      });
+
   })
 })
 
