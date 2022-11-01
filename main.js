@@ -17,9 +17,9 @@ $(function () {
 
   $(".hamburger").on("click", function () {
     $(".listContent").slideToggle(500)
-    line1.addClass("open")
-    line2.addClass("open")
-    line3.addClass("open")
+    line1.toggleClass("open")
+    line2.toggleClass("open")
+    line3.toggleClass("open")
 
     if (line1.hasClass('open')) {
       seeThrough.on('click', function () {
